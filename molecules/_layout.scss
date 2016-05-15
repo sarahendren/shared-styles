@@ -1,0 +1,12 @@
+body {
+  background: $accent;
+}
+
+.body--subpage {
+  background: $secondary;
+}
+
+.main {
+  @include outer-container;
+  background: $background;
+}
