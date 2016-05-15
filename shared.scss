@@ -40,7 +40,7 @@
 // @import "quarks/blockquotes";
 // @import "quarks/headings";
 // @import "quarks/images";
-// @import "quarks/links";
+@import "shared-styles/atoms/links";
 // @import "quarks/lists";
 // @import "quarks/micros";
 // @import "quarks/smallprint";
@@ -57,7 +57,6 @@
 // @import "atoms/icon";
 // @import "atoms/nav";
 
-
 /* Molecules
 ========================================================================== */
 /*
@@ -66,7 +65,7 @@
  * interfering with any of our global styles.
  */
 
-// @import "molecules/footer"; 
+// @import "molecules/footer";
+@import "shared-styles/molecules/layout";
 @import "shared-styles/molecules/nav";
-
-
+@import "shared-styles/molecules/sandbox";

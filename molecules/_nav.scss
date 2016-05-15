@@ -1,13 +1,38 @@
-.nav { }
+.nav--cross {
+  @include outer-container();
+  padding-left: 2em;
+}
 
-.nav--cross {}
+.nav--primary {
+  @include outer-container();
+}
 
-.nav--primary {}
+.body--subpage .nav--cross {
+  @include outer-container();
+  padding-left: 4em;
+}
+
+.body--subpage .nav--cross a {
+  color: $primary;
+}
+
+.body--subpage .nav--primary {
+  @include outer-container();
+  padding:  0 2em;
+}
 
 .nav__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.nav--primary .nav__list {
+  background: $background;
+}
+
+.body--subpage .nav--primary .nav__list {
+  background: $accent;
 }
 
 .nav__item {
@@ -18,4 +43,6 @@
   font-weight: bold;
 }
 
-.nav__link {}
+.nav__link:link, .nav__link:visited {
+  color: $secondary;
+}
