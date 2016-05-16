@@ -1,16 +1,12 @@
 body {
   margin: 0;
-  background: $accent;
+  background: darken($background,10%);
 }
 
 .body--subpage {}
 
-.main {
+main {
   @include outer-container;
   @include pad;
   background: $background;
-}
-
-.body--subpage .main {
-  background: lighten($accent,50%);
 }

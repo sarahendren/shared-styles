@@ -28,6 +28,10 @@
   background: $background;
 }
 
+.body--subpage .nav--primary .nav__list {
+  background: darken($background, 5%);
+}
+
 .nav__item {
   display: inline-block;
   vertical-align: top;
