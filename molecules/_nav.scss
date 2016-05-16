@@ -2,6 +2,10 @@
   @include outer-container();
 }
 
+.nav--cross .nav__list {
+  font-size: modular-scale(-1);
+}
+
 .nav--primary {
   @include outer-container();
 }
@@ -10,50 +14,59 @@
   @include outer-container();
 }
 
-.body--subpage .nav--cross a {
-  color: $primary;
-}
-
 .body--subpage .nav--primary {
   @include outer-container();
 }
 
 .nav__list {
+  @include pad;
   list-style-type: none;
   margin: 0;
-  padding: 0;
 }
 
 .nav--primary .nav__list {
   background: $background;
 }
 
-.body--subpage .nav--primary .nav__list {
-  background: $accent;
-}
-
 .nav__item {
   display: inline-block;
+  vertical-align: top;
+  margin-right: $gutter/2;
+}
+
+.nav__item--last {
+  margin-right: 0;
 }
 
 .nav__item--active {
-  font-weight: bold;
+  font-weight: 800;
 }
 
 .nav__link:link, .nav__link:visited {
   color: $secondary;
 }
 
+.nav__item--icon {
+  float: right;
+}
+
+.nav__icon {
+  fill: $secondary;
+  width: 20px;
+  height: 20px;
+  line-height: 24px;
+}
+
 @include media($md) {
   .nav--cross {
-    padding-left: 2em;
+    padding: 0 $gutter;
   }
-  
+
   .body--subpage .nav--cross {
-    padding-left: 4em;
+    padding: 0 $gutter*2;
   }
 
   .body--subpage .nav--primary {
-    padding:  0 2em;
+    padding:  0 $gutter;
   }
 }

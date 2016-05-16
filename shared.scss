@@ -40,7 +40,6 @@
 // @import "quarks/blockquotes";
 // @import "quarks/headings";
 // @import "quarks/images";
-@import "shared-styles/atoms/links";
 // @import "quarks/lists";
 // @import "quarks/micros";
 // @import "quarks/smallprint";
@@ -53,6 +52,8 @@
  * the default relationships that can be used again and again without bloating the codebase.
  */
 
+@import "shared-styles/atoms/typography";
+@import "shared-styles/atoms/links";
 @import "shared-styles/atoms/breakpoints";
 // @import "atoms/flag";
 // @import "atoms/icon";
@@ -68,5 +69,7 @@
 
 // @import "molecules/footer";
 @import "shared-styles/molecules/layout";
+@import "shared-styles/molecules/progressbar";
 @import "shared-styles/molecules/nav";
 @import "shared-styles/molecules/sandbox";
+@import "shared-styles/molecules/footer";
