@@ -2,6 +2,7 @@ footer {
   @include outer-container;
   @include pad;
   color: $secondary;
+  min-height: 100vh;
 }
 
 footer p {
