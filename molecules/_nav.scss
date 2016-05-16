@@ -1,6 +1,5 @@
 .nav--cross {
   @include outer-container();
-  padding-left: 2em;
 }
 
 .nav--primary {
@@ -9,7 +8,6 @@
 
 .body--subpage .nav--cross {
   @include outer-container();
-  padding-left: 4em;
 }
 
 .body--subpage .nav--cross a {
@@ -18,7 +16,6 @@
 
 .body--subpage .nav--primary {
   @include outer-container();
-  padding:  0 2em;
 }
 
 .nav__list {
@@ -45,4 +42,18 @@
 
 .nav__link:link, .nav__link:visited {
   color: $secondary;
+}
+
+@include media($md) {
+  .nav--cross {
+    padding-left: 2em;
+  }
+  
+  .body--subpage .nav--cross {
+    padding-left: 4em;
+  }
+
+  .body--subpage .nav--primary {
+    padding:  0 2em;
+  }
 }
