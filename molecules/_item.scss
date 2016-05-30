@@ -33,15 +33,33 @@
   display: block;
 }
 
-.item__date {
-  @include span-columns(2);
-}
 
 .item--row .item__thumb {
   @include span-columns(4);
-  max-width: 200px;
 }
 
 .item--row .item__content {
-  @include span-columns(6);
+  @include span-columns(8);
+}
+
+@include media($sm) {
+  .item__date {
+    @include span-columns(2);
+  }
+  .item--row .item__content {
+    @include span-columns(6);
+  }
+}
+
+@include media($lg) {
+  .item__date {
+    @include span-columns(2);
+  }
+  .item--row .item__content {
+    @include span-columns(6);
+  }
+  .item--row .item__thumb {
+    @include span-columns(3);
+    @include shift(1);
+  }
 }
