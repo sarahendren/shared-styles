@@ -7,6 +7,9 @@ body {
 
 main {
   @include outer-container;
-  @include pad;
   background: $background;
+}
+
+.main__content {
+  @include pad;
 }

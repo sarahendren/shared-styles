@@ -48,6 +48,11 @@
 
 .nav__link:link, .nav__link:visited {
   color: $secondary;
+  text-decoration: none;
+}
+
+.nav__link:hover, .nav__link:active {
+  text-decoration: underline;
 }
 
 .nav__item--icon {
@@ -66,6 +71,14 @@
     padding: 0 $gutter;
   }
 
+  .nav--cross .nav__list {
+    font-size: modular-scale(0);
+  }
+
+  .nav--primary .nav__list {
+    font-size: modular-scale(1);
+  }
+
   .body--subpage .nav--cross {
     padding: 0 $gutter*2;
   }
@@ -73,4 +86,17 @@
   .body--subpage .nav--primary {
     padding:  0 $gutter;
   }
+}
+
+.nav--page {
+  border-top: 1px solid $accent;
+}
+
+.nav--page .nav__item {
+  display: block;
+  @include pad;
+  @include span-columns(6);
+}
+
+.nav__item--previous {
 }

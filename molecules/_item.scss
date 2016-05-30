@@ -1,0 +1,47 @@
+.item:link, .item:visited {
+  text-decoration: none;
+  color: $primary;
+  @include pad;
+}
+
+.item:hover {
+  background-color: lighten($accent,50%);
+}
+
+.item__thumb {}
+
+.item__thumb img {
+  height: auto;
+}
+
+.item__content .title {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.item__content .date {
+  color: $secondary;
+}
+
+.item--row .item__content {
+}
+
+.item--card {}
+
+.item--row {
+  @include row;
+  display: block;
+}
+
+.item__date {
+  @include span-columns(2);
+}
+
+.item--row .item__thumb {
+  @include span-columns(4);
+  max-width: 200px;
+}
+
+.item--row .item__content {
+  @include span-columns(6);
+}

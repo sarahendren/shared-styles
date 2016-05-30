@@ -52,9 +52,11 @@
  * the default relationships that can be used again and again without bloating the codebase.
  */
 
-@import "shared-styles/atoms/typography";
-@import "shared-styles/atoms/links";
 @import "shared-styles/atoms/breakpoints";
+
+@import "shared-styles/atoms/typography";
+@import "shared-styles/atoms/images";
+@import "shared-styles/atoms/links";
 // @import "atoms/flag";
 // @import "atoms/icon";
 // @import "atoms/nav";
@@ -73,3 +75,5 @@
 @import "shared-styles/molecules/nav";
 @import "shared-styles/molecules/sandbox";
 @import "shared-styles/molecules/footer";
+@import "shared-styles/molecules/item";
+@import "shared-styles/molecules/cards";

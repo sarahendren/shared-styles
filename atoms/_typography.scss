@@ -1,5 +1,12 @@
-.lead {
+.lead p {
   font-size: modular-scale(1);
+  color: $accent;
+}
+
+@include media($md) {
+  .lead p {
+    font-size: modular-scale(2);
+  }
 }
 
 body {
