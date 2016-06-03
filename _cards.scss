@@ -13,9 +13,13 @@
 }
 
 @include media($md) {
-  .cards .item--card {
+  .cards--three .item--card {
     @include span-columns(4);
     @include omega-reset(2n);
     @include omega(3n);
+  }
+  .cards--two .item--card {
+    @include span-columns(6);
+    @include omega(2n);
   }
 }

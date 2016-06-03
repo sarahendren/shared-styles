@@ -5,24 +5,13 @@
 
 @include media($md) {
   .lead p {
-    font-size: modular-scale(2);
+    font-size: modular-scale(3);
   }
 }
 
 body {
-  $base-border-radius: 3px !default;
-  $base-line-height: 1.5em !default;
-  $base-spacing: 1.5em !default;
-  $action-color: #477DCA !default;
-  $dark-gray: #333 !default;
-  $light-gray: #DDD !default;
-  $medium-screen: 40em !default;
-  $base-font-color: $dark-gray !default;
-  $sans-serif: 'Open Sans', sans-serif;
-  $serif: museo-slab, serif;
-
   @include clearfix;
-  font-family: $serif;
+  font-family: $base-font-family;
   text-align: left;
 
   h1, h2, h3, p {
@@ -30,7 +19,7 @@ body {
   }
 
   hr {
-    border-bottom: 1px solid $light-gray;
+    border-bottom: 1px solid $secondary;
     border-left: 0;
     border-right: 0;
     border-top: 0;
@@ -38,7 +27,7 @@ body {
   }
 
   p {
-    color: $base-font-color;
+    color: $primary;
     line-height: $base-line-height;
   }
 
@@ -50,7 +39,7 @@ body {
   .type {
     border-bottom: 1px solid;
     display: inline-block;
-    font-family: $sans-serif;
+    font-family: $heading-font-family;
     font-size: 0.7em;
     font-weight: 600;
     margin-bottom: 2em;
@@ -60,7 +49,7 @@ body {
   }
 
   h1 {
-    font-family: $serif;
+    font-family: $heading-font-family;
     font-size: 1.6em;
     font-weight: 400;
     margin-bottom: 0.6em;
@@ -71,7 +60,7 @@ body {
   }
 
   h2 {
-    font-family: $sans-serif;
+    font-family: $heading-font-family;
     font-size: 1.1em;
     font-weight: 400;
     line-height: 1.5em;
@@ -93,7 +82,7 @@ body {
   }
 
   h3 {
-   font-family: $serif;
+   font-family: $heading-font-family;
    font-size: 1em;
    font-weight: 600;
    line-height: 1.4em;
@@ -101,21 +90,14 @@ body {
    text-transform: uppercase;
   }
 
-  p.date {
-    color: transparentize($base-font-color, 0.6);
-    font-family: $serif;
-    font-size: 0.8em;
-    margin-bottom: 0.5em;
-  }
-
   p {
-    font-family: $serif;
+    font-family: $base-font-family;
     font-weight: 300;
     letter-spacing: 1;
     margin-bottom: 1.5em;
 
     span {
-      font-family: $sans-serif;
+      font-family: $heading-font-family;
       font-size: 0.8em;
       font-weight: 600;
       text-transform: uppercase;
@@ -124,7 +106,7 @@ body {
 
   a.read-more {
     display: inline-block;
-    font-family: $serif;
+    font-family: $base-font-family;
     font-size: 0.8em;
     font-weight: 700;
     margin-left: 0.2em;
@@ -144,6 +126,6 @@ body {
   }
 
   p.author {
-    font-family: $serif;
+    font-family: $base-font-family;
   }
 }

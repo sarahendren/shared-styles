@@ -1,11 +1,11 @@
 .item:link, .item:visited {
   text-decoration: none;
   color: $primary;
-  @include pad;
+  @include pad(0 0 default 0);
 }
 
-.item:hover {
-  background-color: lighten($accent,50%);
+.item:hover h2 {
+  text-decoration: underline;
 }
 
 .item__thumb {}

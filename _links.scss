@@ -1,12 +1,12 @@
 a:link, a:visited {
-  color: $blue;
+  color: $link;
   text-decoration: underline;
 }
 
 a:hover {
-  color: lighten($blue,15%);
+  color: lighten($link,25%);
 }
 
 a:active {
-  color: darken($blue,15%);
+  color: darken($link,15%);
 }

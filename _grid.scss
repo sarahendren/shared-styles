@@ -1,11 +1,13 @@
 .grid {
   @include row;
-  @include pad;
 }
 .grid__item {
-  @include span-columns(4);
-  @include omega(3n);
-  @include pad(0 0 default 0);
+  width: 33.33vw;
+  float:left;
+}
+
+.grid__item img {
+  display: block;
 }
 
 .grid__item--figure {}
