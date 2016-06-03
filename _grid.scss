@@ -1,0 +1,12 @@
+.grid {
+  @include row;
+  @include pad;
+}
+.grid__item {
+  @include span-columns(4);
+  @include omega(3n);
+  @include pad(0 0 default 0);
+}
+
+.grid__item--figure {}
+.grid__item--text {}

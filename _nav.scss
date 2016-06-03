@@ -1,21 +1,9 @@
-.nav--cross {
+.nav--cross, .nav--primary {
   @include outer-container();
 }
 
 .nav--cross .nav__list {
   font-size: modular-scale(-1);
-}
-
-.nav--primary {
-  @include outer-container();
-}
-
-.body--subpage .nav--cross {
-  @include outer-container();
-}
-
-.body--subpage .nav--primary {
-  @include outer-container();
 }
 
 .nav__list {
@@ -25,11 +13,9 @@
 }
 
 .nav--primary .nav__list {
-  background: $background;
 }
 
 .body--subpage .nav--primary .nav__list {
-  background: darken($background, 5%);
 }
 
 .nav__item {
@@ -47,7 +33,7 @@
 }
 
 .nav__link:link, .nav__link:visited {
-  color: $secondary;
+  color: $accent;
   text-decoration: none;
 }
 
@@ -60,7 +46,7 @@
 }
 
 .nav__icon {
-  fill: $secondary;
+  fill: $accent;
   width: 20px;
   height: 20px;
   line-height: 24px;
@@ -68,7 +54,7 @@
 
 @include media($md) {
   .nav--cross {
-    padding: 0 $gutter;
+//    padding: 0 $gutter;
   }
 
   .nav--cross .nav__list {
@@ -80,11 +66,11 @@
   }
 
   .body--subpage .nav--cross {
-    padding: 0 $gutter*2;
+//    padding: 0 $gutter*2;
   }
 
   .body--subpage .nav--primary {
-    padding:  0 $gutter;
+//    padding:  0 $gutter;
   }
 }
 

@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  background: darken($background,10%);
+  border: 5px solid $accent;
+  @include media($sm) {&{border-width:10px;}}
+  @include media($md) {&{border-width:15px;}}
+  @include media($lg) {&{border-width:20px;}}
+}
+
+.body--subpage {}
+
+main {
+  @include outer-container;
+  background: $background;
+}
+
+.content {
+  @include pad;
+}
