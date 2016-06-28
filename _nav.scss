@@ -39,7 +39,8 @@
 }
 
 .nav__item--active .nav__link {
-  font-weight: 800;
+  font-family: "Produkt Web Black", serif;
+  font-weight: 900;
 }
 
 .nav__link:hover, .nav__link:active {
@@ -58,6 +59,7 @@
 
   .nav--primary .nav__list {
     font-size: modular-scale(2);
+    font-family: "Produkt Web Thin", serif;
   }
 
   .body--subpage .nav--cross {
