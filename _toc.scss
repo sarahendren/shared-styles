@@ -1,0 +1,15 @@
+main.has-toc {
+  @include row;
+}
+
+.has-toc #toc {
+  @include span-columns(4);
+}
+
+.has-toc .content {
+  @include span-columns(8);
+}
+
+#toc {
+  @include pad;
+}
