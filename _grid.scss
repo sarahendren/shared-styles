@@ -6,6 +6,36 @@
   float:left;
 }
 
+.grid__item a {
+  display: block;
+  position: relative;
+}
+
+@include media($md) { // show descriptions on hover when larger than medium breakpoint
+
+  .grid__item a:hover img {
+    opacity: .15;
+  }
+
+  .grid__item a:hover:after {
+    @include pad;
+    content: attr(alt);
+    color: $primary;
+    position: absolute;
+      top: 0;
+      left: 0;
+  }
+
+}
+
+@include media($lg) {
+
+  .grid__item a:hover:after {
+    font-size: modular-scale(1);
+  }
+
+}
+
 .grid__item img {
   display: block;
 }
