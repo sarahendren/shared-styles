@@ -2,10 +2,10 @@ img {
   height: auto;
 }
 
-.full__img {
+.figure__image--full {
   width: 100%;
 }
 
-.full__caption {
-  @include pad;
+.figure__caption--full {
+  @include pad(0 default);
 }
