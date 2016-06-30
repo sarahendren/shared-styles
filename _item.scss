@@ -19,6 +19,12 @@
   font-weight: bold;
 }
 
+.item__content .subtitle {
+  margin-bottom: 0;
+  font-family: Produkt Web Regular;
+  font-weight: 100;
+}
+
 .item__content .date {
   color: $secondary;
 }
