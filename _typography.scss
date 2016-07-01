@@ -1,23 +1,53 @@
 body {
--moz-font-feature-settings: "liga", "kern";
--moz-font-feature-settings:"liga=1, kern=1";
--ms-font-feature-settings:"liga", "kern";
--o-font-feature-settings:"liga", "kern";
--webkit-font-feature-settings:"liga", "kern";
-font-feature-settings: "liga", "kern";
+  font-family: sans-serif;
+  -moz-font-feature-settings: "liga", "kern";
+  -moz-font-feature-settings:"liga=1, kern=1";
+  -ms-font-feature-settings:"liga", "kern";
+  -o-font-feature-settings:"liga", "kern";
+  -webkit-font-feature-settings:"liga", "kern";
+  font-feature-settings: "liga", "kern";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Produkt Web Black", serif;
 }
 
 .lead p {
+  font-family: "Produkt Web Thin", serif;
+  font-size: modular-scale(2);
+  line-height: 1.25;
+  color: $accent;
+}
+
+.lead p strong {
+  font-family: "Produkt Web Regular", serif;
+}
+
+.subhead {
   font-family: "Produkt Web Regular", serif;
   font-size: modular-scale(1);
+  line-height: 1.5;
   color: $accent;
-  strong {
-    font-family: "Produkt Web Regular", serif;
-  }
+}
+
+figcaption {
+  font-family: "Produkt Web Regular", serif;
+  font-style: italic;
 }
 
 @include media($md) {
   .lead p {
-    font-size: modular-scale(3);
+    font-size: modular-scale(4);
+  }
+  article p {
+    @include span-columns(8);
+    @include shift(2);
+    font-size: modular-scale(1);
+    font-weight: 100;
   }
 }
