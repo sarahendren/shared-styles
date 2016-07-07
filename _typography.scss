@@ -33,6 +33,19 @@ h6 {
   font-size: modular-scale(1);
   line-height: 1.5;
   color: $accent;
+  @include pad(0 0 default 0);
+}
+
+article .headline, article .subtitle {
+  font-size: modular-scale(2);
+  margin-bottom: 0;
+}
+
+article .headline {
+}
+
+article .subtitle {
+  font-family: "Produkt Web Thin", serif;
 }
 
 figcaption {
@@ -44,10 +57,19 @@ figcaption {
   .lead p {
     font-size: modular-scale(4);
   }
+
+  .subhead {
+    @include span-columns(8);
+  }
+
   article p {
     @include span-columns(8);
     @include shift(2);
     font-size: modular-scale(1);
     font-weight: 100;
+  }
+
+  article .headline, article .subtitle {
+    font-size: modular-scale(4);
   }
 }

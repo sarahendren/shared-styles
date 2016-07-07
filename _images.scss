@@ -6,6 +6,11 @@ img {
   width: 100%;
 }
 
+.figure__caption p {
+  @include shift(0);
+  @include span-columns(12);
+}
+
 .figure__caption--full {
   @include pad(0 default);
 }

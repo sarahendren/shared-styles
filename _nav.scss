@@ -13,7 +13,7 @@
 }
 
 .nav--cross .nav__link:link, .nav--cross .nav__link:visited, .nav--primary .nav__link:link, .nav--primary .nav__link:visited {
-  color: $secondary;
+  color: $primary;
   text-decoration: none;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .nav__icon {
-  fill: $secondary;
+  fill: $primary;
   width: 20px;
   height: 20px;
   line-height: 24px;
@@ -46,7 +46,7 @@
 
 .nav__link:hover, .nav__link:active {
   text-decoration: underline!important;
-  color: $accent;
+  color: $primary;
 }
 
 @include media($md) {
