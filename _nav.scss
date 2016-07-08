@@ -29,7 +29,7 @@
 }
 
 .nav__item {
-  font-family: "Produkt Web Regular", serif;
+  font-family: "Graphik Web", sans-serif;
   display: inline-block;
   vertical-align: top;
   margin-right: $gutter/2;
@@ -40,7 +40,7 @@
 }
 
 .nav__item--active .nav__link {
-  font-family: "Produkt Web Black", serif;
+  font-family: "Graphik Web", sans-serif;
   font-weight: 900;
 }
 
@@ -60,7 +60,7 @@
 
   .nav--primary .nav__list {
     font-size: modular-scale(2);
-    font-family: "Produkt Web Thin", serif;
+    font-family: "Graphik Web", sans-serif;
   }
 
   .body--subpage .nav--cross {

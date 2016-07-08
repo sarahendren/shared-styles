@@ -8,3 +8,25 @@ footer {
 footer p {
   color: $secondary;
 }
+
+.footer__section {
+  @include row;
+}
+
+.sitemap__section {
+  @include pad(default 0);
+}
+
+@include media($sm) {
+  nav.sitemap__section,
+  .footer__section--colophon section {
+    @include span-columns(4);
+  }
+
+}
+
+@include media($md) {
+  .sitemap__section, nav.sitemap__section {
+    @include span-columns(3);
+  }
+}

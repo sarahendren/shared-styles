@@ -1,5 +1,30 @@
+@mixin pad-ratio($x, $y, $selector: img) {
+  position: relative;
+  padding: 0 0 percentage($y/$x) 0;
+  height: 0;
+  #{$selector} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 img {
   height: auto;
+}
+
+article figure {
+  @include pad($gutter*2 0);
+}
+
+figure img {
+  background: $secondary;
+}
+
+.figure--full {
+  @include pad-ratio(1088, 500);
 }
 
 .figure__image--full {

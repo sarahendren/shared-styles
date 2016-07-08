@@ -8,10 +8,21 @@
   text-decoration: underline;
 }
 
-.item__thumb {}
+.item__thumb--project {
+  @include pad-ratio(329, 247);
+}
+
+.item__thumb--report {
+  @include pad-ratio(241, 181);
+}
+
+.item__thumb--face {
+  @include pad-ratio(300, 300);
+}
 
 .item__thumb img {
-  height: auto;
+  height: 100%;
+  width: 100%;
 }
 
 .item__content .title {
@@ -21,7 +32,7 @@
 
 .item__content .subtitle {
   margin-bottom: 0;
-  font-family: Produkt Web Regular;
+  font-family: Produkt Web Thin;
   font-weight: 100;
 }
 
@@ -40,7 +51,7 @@
 }
 
 
-.item--row .item__thumb {
+.item--row .item__image {
   @include span-columns(4);
 }
 
@@ -64,7 +75,7 @@
   .item--row .item__content {
     @include span-columns(6);
   }
-  .item--row .item__thumb {
+  .item--row .item__image {
     @include span-columns(3);
     @include shift(1);
   }

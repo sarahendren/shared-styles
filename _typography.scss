@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif;
+  font-family: $base-font-family;
   -moz-font-feature-settings: "liga", "kern";
   -moz-font-feature-settings:"liga=1, kern=1";
   -ms-font-feature-settings:"liga", "kern";
@@ -14,7 +14,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Produkt Web Black", serif;
+  font-family: "Graphik Web", serif;
 }
 
 .lead p {
@@ -28,9 +28,12 @@ h6 {
   font-family: "Produkt Web Regular", serif;
 }
 
+.lead a:link, .lead a:visited {
+  color: $primary;
+}
+
 .subhead {
-  font-family: "Produkt Web Regular", serif;
-  font-size: modular-scale(1);
+  font-family: "Graphik Web", serif;
   line-height: 1.5;
   color: $accent;
   @include pad(0 0 default 0);
@@ -48,9 +51,17 @@ article .subtitle {
   font-family: "Produkt Web Thin", serif;
 }
 
+article .date {
+  font-weight: bold;
+  color: $secondary;
+  display: block;
+  @include pad(default 0);
+}
+
 figcaption {
   font-family: "Produkt Web Regular", serif;
   font-style: italic;
+  color: $accent;
 }
 
 @include media($md) {
@@ -59,6 +70,7 @@ figcaption {
   }
 
   .subhead {
+    font-size: modular-scale(1);
     @include span-columns(8);
   }
 

@@ -6,6 +6,10 @@
   float:left;
 }
 
+.grid__item--figure a {
+  @include pad-ratio(800, 600);
+}
+
 .grid__item a {
   display: block;
   position: relative;

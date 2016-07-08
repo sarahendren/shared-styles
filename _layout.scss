@@ -16,3 +16,20 @@ main {
 .content {
   @include pad;
 }
+
+.content section {
+  @include row;
+}
+
+.section--threequarter {
+  display: block;
+  @include row;
+}
+
+.section--threequarter .cards {
+  @include span-columns(9);
+}
+
+.section--threequarter>h2 {
+  @include span-columns(3);
+}
