@@ -17,7 +17,12 @@
 
 @include media($md) { // show descriptions on hover when larger than medium breakpoint
 
-  .grid__item a:hover img {
+
+  .grid__item a img {
+    opacity: 0;
+  }
+
+  .grid__item a:hover img.lazyloaded {
     opacity: .15;
   }
 

@@ -20,6 +20,11 @@
   @include pad-ratio(300, 300);
 }
 
+.item__thumb {
+  @include pad-ratio(400, 300);
+}
+
+
 .item__thumb img {
   height: 100%;
   width: 100%;
