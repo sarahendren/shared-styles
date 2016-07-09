@@ -51,9 +51,12 @@ article .subtitle {
   font-family: "Produkt Web Thin", serif;
 }
 
-article .date {
-  font-weight: bold;
+.date {
   color: $secondary;
+  font-weight: bold;
+}
+
+article .date {
   display: block;
   @include pad(default 0);
 }

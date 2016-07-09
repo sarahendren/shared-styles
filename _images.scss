@@ -23,12 +23,22 @@ figure img {
   background: $secondary;
 }
 
-.figure--full {
+.figure--full .ratio-box {
   @include pad-ratio(1088, 500);
 }
 
 .figure__image--full {
   width: 100%;
+}
+
+.fade-box .lazyload,
+ .fade-box .lazyloading {
+    opacity: 0;
+}
+
+.fade-box .lazyloaded {
+    opacity: 1;
+    transition: opacity 400ms;
 }
 
 .figure__caption p {
