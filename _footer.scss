@@ -1,17 +1,30 @@
 footer {
-  @include outer-container;
-  @include pad;
-  color: $secondary;
+  background: #ff0 url("/uploads/yellow-grid.png");
   min-height: 100vh;
+  text-shadow:
+   -1px -1px 0 #ff0,
+    1px -1px 0 #ff0,
+    -1px 1px 0 #ff0,
+     1px 1px 0 #ff0;
 }
 
-footer p {
-  color: $secondary;
+footer .content {
+  @include outer-container;
+  @include pad;
+}
+
+footer a:link, footer a:visited {
+  color: $primary;
+}
+
+footer hr {
+  border-color: transparent;
 }
 
 .footer__section {
   @include row;
 }
+
 
 .sitemap__section {
   @include pad(default 0);
