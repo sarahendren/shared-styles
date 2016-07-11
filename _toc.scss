@@ -1,12 +1,13 @@
-main.has-toc {
+.article--has-toc .article__row {
   @include row;
+  @include span-columns(12);
 }
 
-.has-toc #toc {
+.article--has-toc #toc {
   @include span-columns(4);
 }
 
-.has-toc .content {
+.article--has-toc .content {
   @include span-columns(8);
 }
 

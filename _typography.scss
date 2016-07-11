@@ -39,10 +39,22 @@ h6 {
   @include pad(0 0 default 0);
 }
 
-article .headline,
-article .subtitle {
+.headline,
+.subtitle {
   font-size: modular-scale(2);
   margin-bottom: 0;
+}
+
+.headline {
+  margin-top: $small-spacing;
+}
+
+.article__header {
+  @include pad;
+}
+
+.article--noimage .headline {
+  padding-top: 0;
 }
 
 article .subtitle {
@@ -92,21 +104,21 @@ figcaption {
     @include span-columns(8);
   }
 
-  article p {
+  .article--center p {
     @include span-columns(8);
     @include shift(2);
     font-size: modular-scale(1);
     font-weight: 100;
   }
 
-  article hr {
+  .article--center hr {
     @include span-columns(2);
     @include shift(5);
     margin-bottom: $gutter*2;
   }
 
-  article .headline,
-  article .subtitle {
+  .headline,
+  .subtitle {
     font-size: modular-scale(4);
   }
 }
