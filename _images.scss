@@ -23,6 +23,10 @@ figure img {
   background: $silver;
 }
 
+.figure .ratio-box {
+  margin-bottom: $gutter/2;
+}
+
 .figure--full .ratio-box {
   @include pad-ratio(1088, 500);
 }

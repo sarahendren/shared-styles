@@ -8,22 +8,25 @@
   text-decoration: underline;
 }
 
-.item__thumb--project {
-  @include pad-ratio(329, 247);
-}
-
-.item__thumb--report {
-  @include pad-ratio(241, 181);
-}
-
-.item__thumb--face {
-  @include pad-ratio(300, 300);
-}
-
 .item__thumb {
+  margin-bottom: $gutter/2;
+}
+
+.item__thumb .ratio-box {
   @include pad-ratio(400, 300);
 }
 
+.item__thumb--project .ratio-box {
+  @include pad-ratio(329, 247);
+}
+
+.item__thumb--report .ratio-box {
+  @include pad-ratio(241, 181);
+}
+
+.item__thumb--face .ratio-box {
+  @include pad-ratio(300, 300);
+}
 
 .item__thumb img {
   height: 100%;
