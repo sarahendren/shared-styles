@@ -44,9 +44,6 @@ article .headline, article .subtitle {
   margin-bottom: 0;
 }
 
-article .headline {
-}
-
 article .subtitle {
   font-family: "Produkt Web Thin", serif;
 }
@@ -84,7 +81,15 @@ figcaption {
     font-weight: 100;
   }
 
-  article .headline, article .subtitle {
+
+  article hr {
+    @include span-columns(2);
+    @include shift(5);
+    margin-bottom: $gutter*2;
+  }
+
+  article .headline,
+  article .subtitle {
     font-size: modular-scale(4);
   }
 }
