@@ -1,11 +1,7 @@
 footer {
-  background: #ff0 url("/uploads/yellow-grid.png");
+  background: #ff0 url("/uploads/yellow-dots.jpg");
+  background-size: cover;
   min-height: 100vh;
-  text-shadow:
-   -1px -1px 0 #ff0,
-    1px -1px 0 #ff0,
-    -1px 1px 0 #ff0,
-     1px 1px 0 #ff0;
 }
 
 footer .content {
