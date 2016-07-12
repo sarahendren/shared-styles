@@ -39,14 +39,20 @@
   margin-right: 0;
 }
 
+.nav__link {
+  padding: .1em;
+}
+
 .nav__item--active .nav__link {
   font-family: "Graphik Web", sans-serif;
   font-weight: 900;
+//  background: #ff0;
 }
 
 .nav__link:hover, .nav__link:active {
   text-decoration: underline!important;
   color: $primary;
+//  background: #ff0;
 }
 
 @include media($md) {

@@ -36,12 +36,14 @@
 .item__content .title {
   margin-bottom: 0;
   font-weight: bold;
+  font-size: modular-scale(2);
 }
 
 .item__content .subtitle {
   margin-bottom: 0;
   font-family: Produkt Web Thin;
   font-weight: 100;
+  font-size: modular-scale(2);
 }
 
 .item--row .item__content {

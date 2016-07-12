@@ -17,11 +17,18 @@ h6 {
   font-family: "Graphik Web", serif;
 }
 
+.lead {
+  display: block;
+  margin-bottom: $base-spacing;
+}
+
 .lead p {
   font-family: "Produkt Web Thin", serif;
   font-size: modular-scale(2);
   line-height: 1.25;
   color: $accent;
+  background: #ff0 url(/uploads/yellow-grid.png);
+  display: inline;
 }
 
 .lead p strong {
@@ -46,7 +53,7 @@ h6 {
 }
 
 .headline {
-  margin-top: $small-spacing;
+  padding-top: $small-spacing;
 }
 
 .article__header {
@@ -77,15 +84,16 @@ article .subtitle {
   font-weight: bold;
 }
 
+.byline {
+  display: block;
+  margin: $small-spacing 0;
+  font-style: italic;
+}
+
 .footnotes {
   @include row();
   @include span-columns(12);
   font-size: modular-scale(-1);
-}
-
-article .date {
-  display: block;
-  @include pad(default 0);
 }
 
 figcaption {
