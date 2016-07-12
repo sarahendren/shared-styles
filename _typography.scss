@@ -6,9 +6,10 @@ body {
   -o-font-feature-settings:"liga", "kern";
   -webkit-font-feature-settings:"liga", "kern";
   font-feature-settings: "liga", "kern";
-  background-image: url("/uploads/aplusa-2.jpg") !important;
+  background-image: url("/uploads/aplusa-3.jpg") !important;
   background-repeat: no-repeat!important;
   background-size: contain!important;
+  background-position: -50px;
 }
 
 h1,
@@ -40,6 +41,8 @@ h6 {
 
 .lead a:link, .lead a:visited {
   color: $primary;
+  text-decoration: none;
+  border-bottom: 1px solid $primary;
 }
 
 .subhead {
@@ -75,6 +78,20 @@ article .subtitle {
   margin-bottom: $small-spacing;
 }
 
+hr {
+  border-color: transparent;
+}
+
+hr:after {
+  content: "+ + +";
+  color: #ff0;
+  font-size: modular-scale(3);
+  display: block;
+  text-align: center;
+  margin-bottom: $small-spacing/2;
+}
+
+
 .article--dropcaps h3 {
   @include row;
   @include span-columns(12);
@@ -83,8 +100,11 @@ article .subtitle {
 }
 
 .date {
+  @include clearfix;
   color: $secondary;
   font-weight: bold;
+  display: block;
+  padding: $small-spacing 0;
 }
 
 .byline {
@@ -125,7 +145,6 @@ figcaption {
   .article--center hr {
     @include span-columns(2);
     @include shift(5);
-    margin-bottom: $gutter*2;
   }
 
   .headline,

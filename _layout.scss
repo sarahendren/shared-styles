@@ -13,6 +13,11 @@ main {
   @include outer-container;
 }
 
+.header--page {
+  @include clearfix;
+  padding-bottom: $gutter;
+}
+
 .content {
   @include pad;
 }
