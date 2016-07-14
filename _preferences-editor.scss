@@ -32,3 +32,8 @@
     background-size: cover;
   }
 }
+
+.flc-slidingPanel-panel.flc-prefsEditor-iframe
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+}
