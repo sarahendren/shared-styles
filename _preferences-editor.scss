@@ -1,0 +1,34 @@
+.fl-prefsEditor-separatedPanel {
+  .fl-panelBar {
+    width: auto;
+    @include outer-container;
+    border: 0;
+    background: none;
+    .fl-prefsEditor-buttons {
+      margin-right: $gutter;
+      box-shadow: none;
+      float: right;
+      border: 0;
+      border-radius: 0;
+      background: none;
+    }
+  }
+  .fl-prefsEditor-showHide,
+  .fl-prefsEditor-reset {
+    @include hide-text;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    padding: 0;
+    min-width: 0;
+  }
+  .fl-prefsEditor-reset {
+    background: url(/uploads/reset.svg)!important;
+    background-size: cover;
+  }
+  .fl-prefsEditor-showHide {
+    background: url(/uploads/settings.svg)!important;
+    background-size: cover;
+  }
+}

@@ -45,6 +45,11 @@ figure img {
     transition: opacity 400ms;
 }
 
+.figure__caption {
+  @include span-columns(12);
+  background: url(/uploads/grid-warp.png);
+}
+
 .figure__caption p {
   @include shift(0);
   @include span-columns(12);
@@ -52,4 +57,18 @@ figure img {
 
 .figure__caption--full {
   @include pad(0 default);
+}
+
+@include media($sm) {
+  .figure--bigcaption {
+    @include row;
+    .figure__image {
+      @include span-columns(6);
+    }
+    .figure__caption {
+      @include span-columns(6);
+      @include pad;
+      font-size:modular-scale(1);
+    }
+  }
 }

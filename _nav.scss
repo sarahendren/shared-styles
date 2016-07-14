@@ -17,7 +17,9 @@
   text-decoration: none;
 }
 
-.nav__item--icon {}
+.nav__item--icon {
+  float: right;
+}
 
 .nav__icon {
   fill: $primary;
@@ -35,6 +37,16 @@
 
 .nav__item--last {
   margin-right: 0;
+}
+
+.hide-xs {
+  display: none;
+}
+
+@include media($sm) {
+  .hide-xs {
+    display: inline;
+  }
 }
 
 .nav__link {

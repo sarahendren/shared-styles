@@ -18,8 +18,16 @@ main {
   padding-bottom: $gutter;
 }
 
-.content {
-  @include pad;
+.content article {
+  h1, h2, .date, p {
+    @include pad(default $gutter);
+  }
+}
+
+@include media($md) {
+  .content {
+//    @include pad;
+  }
 }
 
 .content section {
