@@ -74,11 +74,18 @@ hr:after {
 
 // Page header elements
 
+.main__header {
+  padding: $gutter/2 $gutter/2 $gutter;
+}
+
+.article__header {
+  padding: $gutter/2 $gutter/2 0;
+}
+
 .main__header,
 .article__header {
   @include row;
   @include clearfix;
-  padding: $gutter/2 $gutter/2 0;
 
   @include media($lg) {
     margin-bottom: $gutter;
@@ -121,7 +128,7 @@ hr:after {
 
   .subhead {
     color: $accent;
-    @include pad(0 $gutter/2);
+    @include pad(0);
 
     @include media($md) {
       font-size: modular-scale(1);

@@ -4,7 +4,7 @@ footer {
   padding-top: $gutter;
 
   h2, h3 {
-    padding: 0 $gutter/2;
+    padding: 0;
 
     @include media($md) {
       padding: 0;
@@ -12,8 +12,8 @@ footer {
   }
 
   p, ul {
-    padding: 0 $gutter;
-    
+    padding: 0;
+
     @include media($md) {
       padding: 0;
     }
@@ -30,7 +30,7 @@ footer a:link, footer a:visited {
 
 .footer__section {
   @include row;
-  padding-bottom: $gutter;
+  padding: 0 $gutter/2 $gutter $gutter/2;
 }
 
 @include media($sm) {
