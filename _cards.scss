@@ -6,11 +6,17 @@
 .cards {
   @include row();
   clear: both;
+  padding: 0 $gutter/2;
+
+  @include media($xl) {
+    padding: 0;
+  }
 }
 
 .cards .item--card {
   @include span-columns(6);
   @include omega(2n);
+  padding: 0;
   margin-bottom: $gutter;
 }
 
@@ -18,11 +24,11 @@
   @include span-columns(12);
   clear: both;
   margin-bottom: $gutter;
+  padding: 0;
 }
 
 .xs-cards--float .item__thumb {
   @include span-columns(4);
-  margin: 0 0 $gutter $gutter;
   float: right;
 }
 

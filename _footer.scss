@@ -1,31 +1,36 @@
 footer {
-  background: #ff0 url("/uploads/grid-warp.png");
-  background-size: cover;
   min-height: 100vh;
-  margin-top: $gutter*2;
+  margin-top: $gutter;
   padding-top: $gutter;
-}
 
-footer .content {
-  @include outer-container;
-  @include pad;
+  h2, h3 {
+    padding: 0 $gutter/2;
+
+    @include media($md) {
+      padding: 0;
+    }
+  }
+
+  p, ul {
+    padding: 0 $gutter;
+    
+    @include media($md) {
+      padding: 0;
+    }
+  }
 }
 
 footer a:link, footer a:visited {
   color: $primary;
 }
 
-footer hr {
-  border-color: transparent;
+.footer__content {
+  @include outer-container;
 }
 
 .footer__section {
   @include row;
-}
-
-
-.sitemap__section {
-  @include pad(default 0);
+  padding-bottom: $gutter;
 }
 
 @include media($sm) {
@@ -37,7 +42,8 @@ footer hr {
 }
 
 @include media($md) {
-  .sitemap__section, nav.sitemap__section {
+  nav.sitemap__section,
+  .sitemap__section {
     @include span-columns(3);
   }
 }

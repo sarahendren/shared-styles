@@ -10,9 +10,11 @@
         License: 1606-GGKPSI
 */
 
+// Produkt Web: 800, 400, 100
+// Graphik Web: 600, 400
 
 @font-face {
-  font-family: 'Produkt Web Black';
+  font-family: 'Produkt Web';
   src: url('/fonts/Produkt-BlackItalic-Web.eot');
   src: url('/fonts/Produkt-BlackItalic-Web.eot?#iefix') format('embedded-opentype'),
        url('/fonts/Produkt-BlackItalic-Web.woff2') format('woff2'),
@@ -23,7 +25,7 @@
 }
 
 .Produkt-BlackItalic-Web {
-  font-family: 'Produkt Web Black';
+  font-family: 'Produkt Web';
   font-weight:  800;
   font-style:   italic;
   font-stretch: normal;
@@ -31,7 +33,7 @@
 
 
 @font-face {
-  font-family: 'Produkt Web Black';
+  font-family: 'Produkt Web';
   src: url('/fonts/Produkt-Black-Web.eot');
   src: url('/fonts/Produkt-Black-Web.eot?#iefix') format('embedded-opentype'),
        url('/fonts/Produkt-Black-Web.woff2') format('woff2'),
@@ -42,7 +44,7 @@
 }
 
 .Produkt-Black-Web {
-  font-family: 'Produkt Web Black';
+  font-family: 'Produkt Web';
   font-weight:  800;
   font-style:   normal;
   font-stretch: normal;
@@ -50,7 +52,7 @@
 
 
 @font-face {
-  font-family: 'Produkt Web Regular';
+  font-family: 'Produkt Web';
   src: url('/fonts/Produkt-RegularItalic-Web.eot');
   src: url('/fonts/Produkt-RegularItalic-Web.eot?#iefix') format('embedded-opentype'),
        url('/fonts/Produkt-RegularItalic-Web.woff2') format('woff2'),
@@ -61,7 +63,7 @@
 }
 
 .Produkt-RegularItalic-Web {
-  font-family: 'Produkt Web Regular';
+  font-family: 'Produkt Web';
   font-weight:  400;
   font-style:   italic;
   font-stretch: normal;
@@ -69,7 +71,7 @@
 
 
 @font-face {
-  font-family: 'Produkt Web Regular';
+  font-family: 'Produkt Web';
   src: url('/fonts/Produkt-Regular-Web.eot');
   src: url('/fonts/Produkt-Regular-Web.eot?#iefix') format('embedded-opentype'),
        url('/fonts/Produkt-Regular-Web.woff2') format('woff2'),
@@ -80,7 +82,7 @@
 }
 
 .Produkt-Regular-Web {
-  font-family: 'Produkt Web Regular';
+  font-family: 'Produkt Web';
   font-weight:  400;
   font-style:   normal;
   font-stretch: normal;
@@ -88,7 +90,7 @@
 
 
 @font-face {
-  font-family: 'Produkt Web Thin';
+  font-family: 'Produkt Web';
   src: url('/fonts/Produkt-ThinItalic-Web.eot');
   src: url('/fonts/Produkt-ThinItalic-Web.eot?#iefix') format('embedded-opentype'),
        url('/fonts/Produkt-ThinItalic-Web.woff2') format('woff2'),
@@ -99,7 +101,7 @@
 }
 
 .Produkt-ThinItalic-Web {
-  font-family: 'Produkt Web Thin';
+  font-family: 'Produkt Web';
   font-weight:  100;
   font-style:   italic;
   font-stretch: normal;
@@ -107,7 +109,7 @@
 
 
 @font-face {
-  font-family: 'Produkt Web Thin';
+  font-family: 'Produkt Web';
   src: url('/fonts/Produkt-Thin-Web.eot');
   src: url('/fonts/Produkt-Thin-Web.eot?#iefix') format('embedded-opentype'),
        url('/fonts/Produkt-Thin-Web.woff2') format('woff2'),
@@ -118,7 +120,7 @@
 }
 
 .Produkt-Thin-Web {
-  font-family: 'Produkt Web Thin';
+  font-family: 'Produkt Web';
   font-weight:  100;
   font-style:   normal;
   font-stretch: normal;

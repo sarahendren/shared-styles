@@ -1,31 +1,37 @@
+/*
+NAV
+
+*/
+
 .nav--cross, .nav--primary {
   @include outer-container();
+  padding: $gutter/2;
+
+  @include media($xl) {
+    padding: $gutter 0;
+  }
 }
 
 .nav--cross .nav__list {
   font-size: modular-scale(-1);
+  line-height: 24px;
+
+  @include media($sm) {
+    font-size: modular-scale(0);
+  }
 }
 
 .nav__list {
-  @include pad;
   list-style-type: none;
   margin: 0;
 }
 
-.nav--cross .nav__link:link, .nav--cross .nav__link:visited, .nav--primary .nav__link:link, .nav--primary .nav__link:visited {
+.nav--cross .nav__link:link,
+.nav--cross .nav__link:visited,
+.nav--primary .nav__link:link,
+.nav--primary .nav__link:visited {
   color: $primary;
   text-decoration: none;
-}
-
-.nav__item--icon {
-  float: right;
-}
-
-.nav__icon {
-  fill: $primary;
-  width: 20px;
-  height: 20px;
-  line-height: 24px;
 }
 
 .nav__item {
@@ -35,57 +41,38 @@
   margin-right: $gutter/2;
 }
 
+.nav__item--icon {
+  float: right;
+  line-height: 20px;
+}
+
 .nav__item--last {
   margin-right: 0;
 }
 
-.hide-xs {
-  display: none;
+.nav__item--active {
+  font-weight: 800;
 }
 
-@include media($sm) {
-  .hide-xs {
-    display: inline;
-  }
-}
-
-.nav__link {
-  padding: .1em;
-}
-
-.nav__item--active .nav__link {
-  font-family: "Graphik Web", sans-serif;
-  font-weight: 900;
-//  background: #ff0;
-}
-
-.nav__link:hover, .nav__link:active {
-  text-decoration: underline!important;
+.nav__link:hover,
+.nav__link:active {
+  text-decoration: underline !important;
   color: $primary;
-//  background: #ff0;
 }
 
-@include media($md) {
-  .nav--cross {
-//    padding: 0 $gutter;
-  }
+.nav__link--about {
+  @include hide-text;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(/uploads/about.svg)!important;
+  background-size: cover;
+}
 
-  .nav--cross .nav__list {
-    font-size: modular-scale(-1);
-  }
-
-  .nav--primary .nav__list {
-    font-size: modular-scale(2);
-    font-family: "Graphik Web", sans-serif;
-  }
-
-  .body--subpage .nav--cross {
-//    padding: 0 $gutter*2;
-  }
-
-  .body--subpage .nav--primary {
-//    padding:  0 $gutter;
-  }
+.nav__icon {
+  fill: $primary;
+  width: 20px;
+  height: 20px;
 }
 
 .nav--page {
@@ -101,8 +88,18 @@
   text-decoration: none;
 }
 
-.nav__item small {
+.nav--page .nav__item--next {
+  text-align: right;
 }
 
-.nav__item--previous {
+@include media($md) {
+
+  .nav--cross .nav__list {
+    font-size: modular-scale(-1);
+  }
+
+  .nav--primary .nav__list {
+    font-size: modular-scale(2);
+  }
+
 }

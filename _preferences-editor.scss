@@ -5,7 +5,7 @@
     border: 0;
     background: none;
     .fl-prefsEditor-buttons {
-      margin-right: $gutter;
+      margin-right: 0;
       box-shadow: none;
       float: right;
       border: 0;
@@ -20,6 +20,7 @@
     width: 20px;
     height: 20px;
     border: 0;
+    margin: 0;
     padding: 0;
     min-width: 0;
   }
@@ -36,4 +37,46 @@
 .flc-slidingPanel-panel.flc-prefsEditor-iframe {
   -webkit-overflow-scrolling: touch;
   overflow-y: scroll;
+}
+
+// Some reader preferences overrides
+
+.fl-theme-bw, .fl-theme-wb, .fl-theme-by, .fl-theme-yb, .fl-theme-lgdg {
+
+  // Get rid of problematic backgrounds when a color theme is applied
+  .lead p, footer {
+    background: none !important;
+  }
+
+   // Don't bold all links or give them backgrounds
+  a {
+    font-weight: 400 !important;
+    background-color: transparent !important;
+  }
+
+  // Bold links withinactive nav items, headings, and bold text
+  .nav__item--active, strong, h1, h2, h3, h4, h5, h6 {
+    a:link, a:visited {
+      font-weight: 800 !important;
+    }
+  }
+
+}
+
+.fl-theme-bw, .fl-theme-by {
+  hr:after {
+    color: #000 !important;
+  }
+}
+
+.fl-theme-wb {
+  hr:after {
+    color: #fff !important;
+  }
+}
+
+.fl-theme-lgdg {
+  hr:after {
+    color: #111 !important;
+  }
 }

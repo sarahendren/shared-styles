@@ -1,5 +1,6 @@
 .grid {
   @include row;
+  margin-bottom: $gutter;
 }
 .grid__item {
   width: 33.33vw;

@@ -1,48 +1,20 @@
 body {
   margin: 0;
   background: $background;
-//  border: 5px solid $accent;
-  @include media($sm) {&{border-width:10px;}}
-  @include media($md) {&{border-width:15px;}}
-  @include media($lg) {&{border-width:20px;}}
 }
-
-.body--subpage {}
 
 main {
   @include outer-container;
 }
 
-.header--page {
-  @include clearfix;
+.section--padded {
+  padding: 0 $gutter/2;
+}
+
+.section {
   padding-bottom: $gutter;
 }
 
-.content article {
-  h1, h2, .date, p {
-    @include pad(default $gutter);
-  }
-}
-
-@include media($md) {
-  .content {
-//    @include pad;
-  }
-}
-
-.content section {
-  @include row;
-}
-
-.section--threequarter {
-  display: block;
-  @include row;
-}
-
-.section--threequarter .cards {
-  @include span-columns(9);
-}
-
-.section--threequarter>h2 {
-  @include span-columns(3);
+.fluid-width-video-wrapper {
+  clear: both;
 }

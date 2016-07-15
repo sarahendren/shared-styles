@@ -15,24 +15,86 @@ img {
   height: auto;
 }
 
-article figure {
-  @include pad($gutter*2 0);
-}
-
 figure img {
   background: $silver;
+  display: block;
+  margin: auto;
 }
 
-.figure .ratio-box, .fluid-width-video-wrapper {
+.figure {
+  @include row;
+  clear: both;
+  margin: $gutter 0;
+}
+
+article .figure {
+  @include media($md) {
+    border-color: #ff0;
+    border-style: solid;
+    border-width: 30px;
+    border-image: url("/uploads/cropmarks.png") 30 repeat;
+  }
+}
+
+
+.figure__caption {
+  @include span-columns(12);
+  font-family: $display-font-family;
+  font-style: italic;
+  font-weight: 400;
+  font-size: modular-scale(0);
+  line-height: 1.25;
+  padding: $gutter/4 $gutter/2;
+
+  @include media($md) {
+    font-weight: 400;
+    padding: 0 $gutter/2 !important;
+  }
+}
+
+.figure__caption p {
+  @include shift(0);
+  @include span-columns(12);
+  display: inline !important;
+  clear: both;
+  float: none !important;
+  background: #ff0 url(/uploads/yellow-grid.png);
+  line-height: 1.5;
+  font-size: modular-scale(0);
+  padding: 0;
+
+  @include media($md) {
+    font-weight: 100;
+    padding: 0;
+    line-height: 1.25;
+  }
+}
+
+.figure__caption--full {
+  @include media($md) {
+    @include outer-container;
+    padding: 0 $gutter/2 !important;
+    margin: $gutter/4 auto !important;
+    float: none !important;
+
+    @include media($xl) {
+      padding: 0 !important;
+    }
+
+    p {
+      float: none !important;
+      margin: auto !important;
+      font-size: modular-scale(2);
+    }
+  }
+}
+
+.fluid-width-video-wrapper {
   margin-bottom: $gutter/2;
 }
 
 .figure--full .ratio-box {
   @include pad-ratio(1088, 500);
-}
-
-.figure__image--full {
-  width: 100%;
 }
 
 .fade-box .lazyload,
@@ -45,30 +107,16 @@ figure img {
     transition: opacity 400ms;
 }
 
-.figure__caption {
-  @include span-columns(12);
-  background: url(/uploads/grid-warp.png);
-}
-
-.figure__caption p {
-  @include shift(0);
-  @include span-columns(12);
-}
-
-.figure__caption--full {
-  @include pad(0 default);
-}
-
-@include media($sm) {
-  .figure--bigcaption {
+@include media($md) {
+  article .figure {
     @include row;
     .figure__image {
       @include span-columns(6);
     }
     .figure__caption {
       @include span-columns(6);
-      @include pad;
-      font-size:modular-scale(1);
+      font-size:modular-scale(2);
+      text-align: right;
     }
   }
 }
