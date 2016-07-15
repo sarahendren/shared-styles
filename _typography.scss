@@ -208,6 +208,8 @@ hr:after {
   }
 
   .article__header .subhead p {
+    padding: 0;
+
     @include media($md) {
       @include span-columns(12);
       font-size: modular-scale(0);
@@ -226,6 +228,14 @@ article p {
     @include span-columns(8);
     @include shift(2);
   }
+}
+
+.article--has-toc .content {
+  padding: $gutter;
+}
+
+.article--has-toc .content p {
+  padding: 0;
 }
 
 .article--has-toc p {

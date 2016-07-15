@@ -1,5 +1,5 @@
 ul.toc {
-  padding: 0;
+  padding: 0 $gutter/2;
   color: $secondary;
 }
 
@@ -37,5 +37,6 @@ ul.toc, ul.toc ul {
 
   .article--has-toc .content {
     @include span-columns(8);
+    padding: $gutter;
   }
 }
