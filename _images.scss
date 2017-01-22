@@ -29,10 +29,9 @@ figure img {
 
 article .figure {
   @include media($md) {
-    border-color: #ff0;
+    border-color: $accent;
     border-style: solid;
     border-width: 30px;
-    border-image: url("/uploads/cropmarks.png") 30 repeat;
   }
 }
 
@@ -58,7 +57,7 @@ article .figure {
   display: inline !important;
   clear: both;
   float: none !important;
-  background: #ff0 url(/uploads/yellow-grid.png);
+  background: $accent url(/uploads/yellow-grid.png);
   line-height: 1.5;
   font-size: modular-scale(0);
   padding: 0;
