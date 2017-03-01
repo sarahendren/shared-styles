@@ -1,0 +1,30 @@
+.contact {
+  @include row();
+  clear: both;
+  padding: 0 $gutter/2;
+
+  @include media($xl) {
+    padding: 0;
+  }
+}
+
+.contact__info, .contact__form {
+  @include span-columns(12);
+  padding: 0;
+  margin-bottom: $gutter;
+
+  p {
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+
+@include media($md) { // show descriptions on hover when larger than medium breakpoint
+  .contact__info, .contact__form {
+    @include span-columns(6);
+    @include omega(2n);
+    padding: 0;
+    margin-bottom: $gutter;
+
+  }
+}
