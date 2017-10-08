@@ -58,7 +58,8 @@
 .item--row {
   @include row;
   display: block;
-  margin-bottom: $gutter*2;
+  margin-top: $gutter;
+  margin-bottom: $gutter;
 }
 
 .item--row .date,
@@ -93,6 +94,13 @@
     @include span-columns(4);
     margin-top: 0;
   }
+
+  .reading-notes .item--row .item__date {
+    @include span-columns(3);
+  }
+  .reading-notes .item--row .item__content {
+    @include span-columns(7);
+  }
 }
 
 @include media($lg) {
@@ -105,5 +113,12 @@
   .item--row .item__image {
     @include span-columns(3);
     @include shift(1);
+  }
+
+  .reading-notes .item--row .item__date {
+    @include span-columns(3);
+  }
+  .reading-notes .item--row .item__content {
+    @include span-columns(7);
   }
 }

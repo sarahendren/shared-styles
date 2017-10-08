@@ -18,3 +18,43 @@ main {
 .fluid-width-video-wrapper {
   clear: both;
 }
+
+/* SH About Page */
+
+.about {
+  @include row();
+  clear: both;
+  padding: 0 $gutter/2;
+
+  @include media($xl) {
+    padding: 0;
+  }
+}
+
+.about__image,
+.about__text {
+  @include span-columns(12);
+  padding: 0;
+  margin-bottom: $gutter;
+
+  p {
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+
+@include media($md) { // show descriptions on hover when larger than medium breakpoint
+  .about__image {
+    @include span-columns(4);
+    @include omega(2n);
+    padding: 0;
+    margin-bottom: $gutter;
+  }
+
+  .about__text {
+    @include span-columns(8);
+    @include omega(2n);
+    padding: 0;
+    margin-bottom: $gutter;
+  }
+}

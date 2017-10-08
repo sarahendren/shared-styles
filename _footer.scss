@@ -1,7 +1,6 @@
 footer {
   min-height: 100vh;
   margin-top: $gutter*2;
-  padding-top: $gutter*2;
 
   h2, h3 {
     padding: 0;
@@ -28,9 +27,30 @@ footer a:link, footer a:visited {
   @include outer-container;
 }
 
+.footer__section__content {
+  @include pad();
+  padding-top: $gutter*2;
+}
+
 .footer__section {
   @include row;
-  padding: 0 $gutter/2 $gutter $gutter/2;
+  padding: 0 0 $gutter 0;
+}
+
+.sitemap__section,
+.colophon__section {
+  @include pad();
+}
+
+.sitemap__section--inverted {
+  color: $primary;
+  background: $background;
+}
+
+.footer__section--colophon {
+  border-top: 1px solid $background;
+  padding-top: $gutter;
+  font-size: modular-scale(-1);
 }
 
 @include media($sm) {
@@ -43,7 +63,11 @@ footer a:link, footer a:visited {
 
 @include media($md) {
   nav.sitemap__section,
-  .sitemap__section {
+  .sitemap__section,
+  .footer__section--colophon .colophon__section {
     @include span-columns(3);
+  }
+  .footer__section--colophon .colophon__section--first {
+    @include shift(3);
   }
 }

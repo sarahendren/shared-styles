@@ -3,12 +3,25 @@ NAV
 
 */
 
-.nav--cross, .nav--primary {
+.site-title, .nav--cross, .nav--primary {
   @include outer-container();
   padding: $gutter/2;
 
   @include media($xl) {
     padding: $gutter 0;
+  }
+}
+
+@include media($md) {
+  .nav__site-title,
+  .nav--cross .nav__list {
+    @include span-columns(6);
+  }
+  .nav--cross .nav__list {
+    text-align: right;
+  }
+  .nav__item--withrightpadding {
+    padding-right: $gutter;
   }
 }
 
@@ -38,7 +51,14 @@ NAV
   font-family: "Graphik Web", sans-serif;
   display: inline-block;
   vertical-align: top;
-  margin-right: $gutter/2;
+  margin-right: $gutter/4;
+}
+
+.nav__item--withseparator:after {
+  content: "|";
+  display: inline-block;
+  padding-left: $gutter/4;
+  color: $background;
 }
 
 .nav__item--icon {
@@ -76,6 +96,7 @@ NAV
 }
 
 .nav--page {
+  clear: both;
   @include row;
 }
 
@@ -100,7 +121,7 @@ NAV
   }
 
   .nav--primary .nav__list {
-    font-size: modular-scale(2);
+    font-size: modular-scale(1);
   }
 
 }
