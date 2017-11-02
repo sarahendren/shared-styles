@@ -17,8 +17,13 @@ NAV
   .nav--cross .nav__list {
     @include span-columns(6);
   }
+  .nav--cross .nav__site-title {
+      float: left;
+  }
   .nav--cross .nav__list {
     text-align: right;
+    float: right;
+    margin-right: 0;
   }
   .nav__item--withrightpadding {
     padding-right: $gutter;
