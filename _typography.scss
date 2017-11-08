@@ -62,7 +62,7 @@ h6 {
 }
 
 .article__header {
-  padding: $gutter/2 $gutter/2 0;
+  margin: $gutter/2 $gutter;
 }
 
 .main__header,
@@ -205,7 +205,7 @@ article blockquote {
   padding: 0 $gutter;
 
   @include media($md) {
-    font-size: modular-scale(1);
+    font-size: modular-scale(0);
     padding: 0;
     @include span-columns(8);
     @include shift(2);
@@ -213,12 +213,20 @@ article blockquote {
 }
 
 article blockquote p {
+  padding-left: 0;
   @include media($md) {
     @include span-columns(12);
     @include shift(0);
     font-size: modular-scale(0);
     margin-left: $gutter;
-    margin-bottom: 0!important;
+  }
+}
+
+.article .content {
+  clear: both!important;
+  @include row();
+  @include media($md) {
+    padding: $gutter;
   }
 }
 
@@ -283,7 +291,6 @@ article .byline {
       @include shift(0);
       font-size: modular-scale(0);
       margin-left: $gutter;
-      margin-bottom: 0!important;
     }
   }
 }

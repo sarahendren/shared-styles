@@ -57,7 +57,6 @@ article .figure {
   display: inline !important;
   clear: both;
   float: none !important;
-  background: $accent url(/uploads/yellow-grid.png);
   line-height: 1.5;
   font-size: modular-scale(0);
   padding: 0;
@@ -90,6 +89,10 @@ article .figure {
 
 .fluid-width-video-wrapper {
   margin-bottom: $gutter/2;
+}
+
+.figure--full {
+  margin-top: 0!important;
 }
 
 .figure--full .ratio-box {

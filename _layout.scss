@@ -24,7 +24,7 @@ main {
 .about {
   @include row();
   clear: both;
-  padding: 0 $gutter/2;
+  padding: 0 $gutter!important;
 
   @include media($xl) {
     padding: 0;
@@ -34,7 +34,6 @@ main {
 .about__image,
 .about__text {
   @include span-columns(12);
-  padding: 0;
   margin-bottom: $gutter;
 
   p {
